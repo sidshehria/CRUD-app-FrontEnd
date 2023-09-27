@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">   
+    <title>Add Product Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Product-List</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container mt-5 col-6">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Product Name" aria-label="Product Name" aria-describedby="button-addon2">
+            <button id="add_btn" class="btn btn-outline-success" type="button" id="button-addon2">Add</button>
+          </div>
+          <ul  id="parentList" class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+               <h3 class="flex-grow-1"> Product 1 </h3>
+                <button class="btn btn-warning mx-3" onclick="editProduct(this)">Edit</button>
+                <button class="btn btn-danger" onclick="removeProduct(this)">Remove</button>
+            </li>
+          </ul>
+        </div>   
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>
